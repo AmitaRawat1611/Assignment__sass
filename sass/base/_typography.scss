@@ -1,0 +1,24 @@
+.heading-primary {
+  color: $color-white;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  animation: toRight 1.3s;
+
+  @media (max-width: $bp-large) {
+    font-size: 3rem;
+  }
+  @media (max-width: $bp-medium) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: $bp-small) {
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}

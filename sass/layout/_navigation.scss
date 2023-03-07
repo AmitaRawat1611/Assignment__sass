@@ -1,0 +1,9 @@
+.list {
+  list-style: none;
+  display: flex;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+}

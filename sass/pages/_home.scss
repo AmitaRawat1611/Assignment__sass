@@ -1,0 +1,48 @@
+.section-hero {
+  padding: 1rem 0 6.7rem 0;
+  // background-color: $color-primary;
+  background-image: url("/img/new-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: drop-shadow(0 0px 5px $color-primary);
+
+  @media (max-width: $bp-large) {
+    background-color: $color-primary;
+    background-image: none;
+  }
+  @media (max-width: $bp-medium) {
+    background-image: url("/img/new-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    filter: drop-shadow(0 0px 5px $color-primary);
+  }
+}
+
+.section-api {
+  padding: 5rem 0;
+}
+
+.section-features {
+  margin: 10rem 0;
+  padding: 3.5rem 0;
+
+  @media (max-width: $bp-largest) {
+    margin: 4rem 0;
+  }
+  @media (max-width: $bp-small) {
+    margin: 2rem 0;
+  }
+}
+
+.section-faq {
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-carousel {
+  padding: 5rem 0;
+  position: relative;
+}

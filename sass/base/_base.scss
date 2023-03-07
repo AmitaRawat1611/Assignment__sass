@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media (max-width: 75em) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.top {
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+
+  &__btn {
+    cursor: pointer;
+    background-color: $color-secondary;
+    border: none;
+    display: block;
+    padding: 0.7rem;
+    border-radius: 3px;
+    box-shadow: 0 3rem 4rem ($color-black, 0.5);
+  }
+  &__icon {
+    font-size: 3rem;
+    color: $color-white;
+  }
+}

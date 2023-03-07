@@ -1,0 +1,94 @@
+.header {
+  font-family: "Roboto", sans-serif;
+  background-color: $header-color;
+  padding: 1rem 0;
+  box-shadow: 0 2rem 3rem rgba($color-black, 0.03);
+
+  &__top {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 0 !important;
+
+    @media (max-width: $bp-large) {
+      justify-content: space-around;
+    }
+
+    @media (max-width: $bp-medium) {
+      flex-direction: column;
+
+      justify-items: center;
+      gap: 3rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+
+    @media (max-width: $bp-large) {
+      flex-grow: 0;
+    }
+    @media (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-hindi {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    &--1 {
+      padding: 0 1rem;
+      border-right: 1px solid #272727;
+      @media (max-width: $bp-small) {
+        border: none;
+      }
+    }
+    &--2 {
+      flex-grow: 1;
+    }
+  }
+  &__nav {
+    font-size: 1.1rem;
+    @media (max-width: $bp-small) {
+      font-size: 0.9rem;
+    }
+  }
+  &__list {
+    gap: 0.5rem;
+
+    @media (max-width: $bp-large) {
+      gap: 0rem;
+    }
+    @media (max-width: $bp-medium) {
+      gap: 0.6rem;
+    }
+    @media (max-width: $bp-mini) {
+      font-size: 0.6rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__link:active {
+    color: #000;
+  }
+}
+
+.black {
+  background-color: #000;
+  color: #fff;
+  display: inline;
+  padding: 0.4rem 0.5rem;
+}
+.white {
+  background-color: $color-white;
+  color: #000;
+  display: inline;
+  padding: 0.4rem 0.5rem;
+}

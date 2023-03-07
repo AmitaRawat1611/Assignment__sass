@@ -1,0 +1,192 @@
+.hero {
+  margin: 4rem 0;
+  position: relative;
+  display: flex;
+  font-family: "Poppins";
+
+  @media (max-width: $bp-medium) {
+    // flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  //HERO NAV
+
+  &__nav {
+    width: auto;
+
+    text-align: center;
+    @media (max-width: $bp-small) {
+      justify-content: center;
+    }
+    &-link:visited,
+    &-link:link {
+      color: $color-white;
+    }
+
+    &-link:hover::before {
+      content: " ";
+      width: 6px;
+      height: 6px;
+      background-color: $color-white;
+      border-radius: 50%;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+    }
+  }
+  &__list {
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    @media (max-width: $bp-small) {
+      gap: 0;
+    }
+  }
+  &__item {
+    display: inline-block;
+    padding: 2rem;
+    color: $color-white;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+
+    @media (max-width: $bp-smallest) {
+      font-size: 1.2rem;
+      color: rgb(70, 103, 241);
+    }
+  }
+
+  &__text {
+    padding: 2rem;
+    font-size: 1.4rem;
+    z-index: 0;
+    width: 60%;
+    color: $color-white;
+
+    @media (max-width: $bp-large) {
+      width: 77%;
+    }
+
+    @media (max-width: $bp-medium) {
+      width: 100%;
+      // order: 1;
+      font-size: 1.8rem;
+      margin-bottom: 4rem;
+    }
+    @media (max-width: $bp-small) {
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+    }
+
+    &-1 {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    width: 90%;
+
+    @media (max-width: $bp-medium) {
+      width: 60%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__button-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    @media (max-width: $bp-medium) {
+      justify-content: start;
+    }
+
+    @media (max-width: $bp-small) {
+      justify-content: center;
+    }
+  }
+  &__link {
+    padding: 1rem;
+    display: inline-block;
+    background-color: $color-white;
+    color: $color-primary;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+
+    @media (max-width: $bp-small) {
+      padding: 0.6rem;
+    }
+  }
+  &__button {
+    color: $color-primary;
+    font-size: 1.4rem;
+    background-color: $color-yellow;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &__api-box {
+    display: flex;
+    gap: 5rem;
+    margin-top: 4.4rem;
+    @media (max-width: $bp-medium) {
+      justify-content: start;
+    }
+
+    @media (max-width: $bp-small) {
+      align-items: center;
+    }
+    @media (max-width: $bp-small) {
+      justify-content: center;
+      gap: 2.5rem;
+    }
+  }
+
+  &__api {
+    position: relative;
+    &:not(:last-child)::after {
+      content: "";
+      height: 30px;
+      border-left: 1px solid white;
+      position: absolute;
+      top: 25%;
+      right: -35%;
+      margin: 0px 1rem;
+
+      @media (max-width: $bp-small) {
+        top: 25%;
+        right: -35%;
+        height: 20px;
+      }
+    }
+
+    &--number {
+      font-size: 2rem;
+      font-weight: 600;
+
+      @media (max-width: $bp-small) {
+        font-size: 1.6rem;
+        text-align: center;
+      }
+    }
+    &--text {
+      font-size: 1.2rem;
+
+      @media (max-width: $bp-small) {
+        // text-align: center;
+        font-size: 1rem;
+      }
+    }
+  }
+}
