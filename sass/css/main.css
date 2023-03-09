@@ -229,11 +229,16 @@ body {
   color: #4667f1;
   border-radius: 0.5rem;
   margin-right: 2rem;
+  transition: all 0.2s;
 }
 @media (max-width: 31.25em) {
   .hero__link {
     padding: 0.6rem;
   }
+}
+.hero__link:active {
+  transform: translateY(5px);
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
 }
 .hero__button {
   color: #4667f1;

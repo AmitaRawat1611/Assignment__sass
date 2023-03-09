@@ -121,10 +121,16 @@
     color: $color-primary;
     border-radius: 0.5rem;
     margin-right: 2rem;
+    transition: all 0.2s;
 
     @media (max-width: $bp-small) {
       padding: 0.6rem;
     }
+  }
+
+  &__link:active {
+    transform: translateY(5px);
+    box-shadow: 0 1rem 4rem rgba($color-black, 0.3);
   }
   &__button {
     color: $color-primary;
