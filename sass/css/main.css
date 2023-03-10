@@ -1015,9 +1015,7 @@ body {
 
 .section-hero {
   padding: 1rem 0 6.7rem 0;
-  background-image: url("/img/new-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #4667f1;
   filter: drop-shadow(0 0px 5px #4667f1);
 }
 @media (max-width: 56.25em) {
@@ -1026,16 +1024,6 @@ body {
     background-image: none;
   }
 }
-@media (max-width: 50em) {
-  .section-hero {
-    background-image: url("/img/new-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;
-    filter: drop-shadow(0 0px 5px #4667f1);
-  }
-}
-
 .section-api {
   padding: 5rem 0;
 }
